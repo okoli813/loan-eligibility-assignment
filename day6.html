@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day6.css">
+</head>
+<body>
+  
+    <div class="container">
+        <div>
+        <h2 class="header">LOAN FORM</h2>
+        <h3 class="h3">Please fill in all spaces</h3>
+        <div class="placeholder">
+          <input type="text" id="firstName" placeholder="Full Name" required /><br/>
+             <input type="state" id="StateOfresidence" placeholder="State of residence" required /><br/>
+                <input type="text" id="Address" placeholder="Address" required /><br/>
+                   <input type="number" id="firstName" placeholder="Phone Number" required /><br/>
+                   </div>
+        </div>
+        <div class="form">
+    <form id="creditForm">
+      <h2 class="credentials">BANK CREDENTIALS</h2>
+        <div class="label">
+            <div class="input">
+  <label>Annual Income:</label>
+  <input type="number" id="income" required><br>
+
+  <label>Loan Amount Required:</label>
+  <input type="number" id="loanAmount" required><br>
+
+  <label>Current Account Balance:</label>
+  <input type="number" id="currentBalance" required><br>
+
+  <label>6 Months Credit History:</label>
+
+  <select id="creditHistory">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select><br>
+
+  <label>Last Deposit Date (YYYY-MM-DD):</label>
+  <input type="date" id="depositDate" required><br>
+
+  <label>Last Loan Collection Date (YYYY-MM-DD):</label>
+  <input type="date" id="loanDate" required><br>
+
+  <label>Repayment Period (in months):</label>
+  <input type="number" id="repayment" required><br>
+
+  <label>Account Type:</label>
+  <select id="accountType">
+    <option value="current">Current</option>
+    <option value="savings">Savings</option>
+  </select><br><br>
+  </div>
+</div>
+<div class="button">
+  <button type="submit">Check Credit Score</button>
+ 
+  </div>
+</form>
+</div>
+<div class="result">
+<p id="result"></p>
+</div>
+<script src="day6.js"></script>
+</div>
+</body>
+
+</html>
